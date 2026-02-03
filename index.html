@@ -15,8 +15,21 @@
     <!-- Header -->
     <header class="site-header">
         <div class="container header-container">
-            <div class="logo">
-                <img src="logo.png" alt="Work Transition Program Logo">
+            <div class="header-top">
+                <div class="logo">
+                    <img src="logo-program.png" alt="Program Text Logo">
+                    <img src="logo-agency.png" alt="Agency Logo">
+                    <img src="logo-undp.png" alt="UNDP Logo">
+                    <img src="logo-ministry.png" alt="Ministry Logo">
+                </div>
+                <div class="header-actions">
+                    <a href="#register" class="btn btn-primary desktop-only">Бүртгүүлэх</a>
+                    <button class="menu-toggle" aria-label="Toggle Menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
             </div>
             <nav class="main-nav">
                 <ul>
@@ -25,12 +38,10 @@
                     <li><a href="#news">Мэдээ, мэдээлэл</a></li>
                     <li><a href="#results">Хэрэгжилт, үр дүн</a></li>
                     <li><a href="#contact">Холбоо барих</a></li>
+                    <li><a href="#compliance">Ил тод</a></li>
+                    <li class="mobile-only-item"><a href="#register" class="btn btn-primary">Бүртгүүлэх</a></li>
                 </ul>
             </nav>
-            <div class="header-actions">
-                <a href="#register" class="btn btn-primary">Бүртгүүлэх</a>
-                <!-- Mobile Menu Toggle could go here -->
-            </div>
         </div>
     </header>
 
@@ -68,22 +79,22 @@
     <section id="results" class="stats-section">
         <div class="container stats-grid">
             <div class="stat-card">
-                <h2>700+</h2>
+                <h2><span class="counter" data-target="700">0</span>+</h2>
                 <p>Оролцогч</p>
                 <div class="stat-bar orange"></div>
             </div>
             <div class="stat-card">
-                <h2>450+</h2>
+                <h2><span class="counter" data-target="450">0</span>+</h2>
                 <p>Дагалдан суралцагч</p>
                 <div class="stat-bar green"></div>
             </div>
             <div class="stat-card">
-                <h2>320+</h2>
+                <h2><span class="counter" data-target="320">0</span>+</h2>
                 <p>Ажилд орсон</p>
                 <div class="stat-bar teal"></div>
             </div>
             <div class="stat-card">
-                <h2>120+</h2>
+                <h2><span class="counter" data-target="120">0</span>+</h2>
                 <p>Хамтрагч байгууллага</p>
                 <div class="stat-bar green-light"></div>
             </div>
@@ -315,6 +326,7 @@
             </div>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>
