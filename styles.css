@@ -133,7 +133,7 @@ ul {
 /* Hero Section */
 .hero-section {
     position: relative;
-    background: linear-gradient(to right, #f3f6f8 40%, rgba(255, 255, 255, 0) 100%), url('hero-bg.png') no-repeat center center/cover;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.95) 30%, rgba(255, 255, 255, 0.2) 100%), url('news-training.png') no-repeat center center/cover;
     /* In a real project, we'd position the image more carefully or use an img tag with absolute positioning */
     padding: 5rem 0;
     min-height: 500px;
@@ -457,7 +457,7 @@ ul {
 }
 
 .news-1 {
-    background-image: url('news-enrollment.png');
+    background-image: url('news-career.png');
 }
 
 .news-2 {
@@ -465,7 +465,7 @@ ul {
 }
 
 .news-3 {
-    background-image: url('news-career.png');
+    background-image: url('news-career-old.png');
 }
 
 .news-content {
