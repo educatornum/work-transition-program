@@ -600,27 +600,10 @@ ul {
 
 .partners-grid {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(9, 1fr);
     gap: 1.5rem;
-    align-items: stretch;
-}
-
-.partner-card {
-    background: white;
-    padding: 1.5rem;
-    border-radius: 12px;
-    border: 1px solid #e5e7eb;
-    display: flex;
     align-items: center;
-    justify-content: center;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
-}
-
-.partner-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-    border-color: var(--primary-green);
+    justify-items: center;
 }
 
 .partner-logo {
@@ -631,15 +614,24 @@ ul {
 }
 
 .partner-logo img {
-    height: 40px;
-    opacity: 0.7;
-    filter: grayscale(100%);
-    transition: all 0.3s;
+    max-height: 45px;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .partner-logo img:hover {
-    opacity: 1;
-    filter: none;
+    transform: scale(3.0);
+    /* 3x enlargement as requested */
+    filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.2));
+    z-index: 100;
+    position: relative;
+    background: white;
+    /* Add background to avoid transparency issues during huge overlap */
+    padding: 5px;
+    border-radius: 5px;
 }
 
 .logo {
@@ -787,8 +779,8 @@ ul {
     }
 
     .partners-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 1rem;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
     }
 
     .process-steps {
